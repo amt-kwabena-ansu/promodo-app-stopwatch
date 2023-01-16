@@ -47,10 +47,11 @@ let dd = document.getElementById("dd");
 let dd0 = document.getElementById("dd0");
 let minCounter=0;
 let running =false;//check if timer is runing
-
+let circleCounter=0;
 
 
 function startTimer(){
+     
     //clear circle animation
     let Fcircle=$(":root").css("--circle");
     dd.style.strokeDashoffset=(Fcircle);
@@ -62,6 +63,7 @@ function startTimer(){
     minCounter=0;
     minutes=data.runTime.time;
     setMin=minutes*60;
+    circleCounter=setMin;
     loopCalc=(setMin)+1;
     int=setInterval(displayTimer,1000);
 }
@@ -71,6 +73,7 @@ function resetTimer(){
     running=false;
     $("#contText").html("RESTART");
     minutes=data.oldTime.time;
+    circleCounter=minutes*60;
 }
 function showT(){
     let m = minutes < 10 ? "0" + minutes : minutes;
@@ -113,13 +116,12 @@ function displayTimer(){
         if(minCounter>60){
             if(minCounter%60==1){
                 let circle=$(":root").css("--circle");
-                dd.style.strokeDashoffset=((circle*loopCalc)/setMin);
+                circleCounter=loopCalc;
+                dd.style.strokeDashoffset=((circle*loopCalc)/setMin);// to decrease the ofset
             }
         }
-        else{
-            let Fcircle=$(":root").css("--circle");
-    dd.style.strokeDashoffset=(Fcircle);
-        }
+        let circle=$(":root").css("--circle");
+        dd.style.strokeDashoffset=((circle*circleCounter)/setMin);
     }
 }
 function setT(){
@@ -234,7 +236,7 @@ $("#controller").click(()=>{
     }
     else if(cont=="RESUME"){
         $("#contText").html("PAUSE");
-        startTimer()
+        int=setInterval(displayTimer,1000);
     }
 });
 $("#new").click(()=>{
