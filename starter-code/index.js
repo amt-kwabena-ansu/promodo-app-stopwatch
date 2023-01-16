@@ -135,6 +135,7 @@ function font(f){
         case "kumbh":
             {
                 $(":root").css("--font",data.font.kumbh);
+                $("h1").css("font-weight","bold");
                 $("#kumbh").css("background-color",color1);
                 $("#kumbh").css("color",color2);
                 $("#roboto").css("background-color",color2);
@@ -146,6 +147,7 @@ function font(f){
         case "roboto":
             {
                 $(":root").css("--font",data.font.roboto);
+                $("h1").css("font-weight","bold");
                 $("#roboto").css("background-color",color1);
                 $("#roboto").css("color",color2);
                 $("#kumbh").css("background-color",color2);
@@ -157,6 +159,7 @@ function font(f){
         case "space":
             {
                 $(":root").css("--font",data.font.space);
+                $("h1").css("font-weight","normal");
                 $("#space").css("background-color",color1);
                 $("#space").css("color",color2);
                 $("#roboto").css("background-color",color2);
@@ -168,6 +171,7 @@ function font(f){
         default:
             {
                 $(":root").css("--font",data.font.kumbh);
+                $("h1").css("font-weight","bold");
                 $("#kumbh").css("background-color",color1);
                 $("#kumbh").css("color",color2);
                 $("#roboto").css("background-color",color2);
