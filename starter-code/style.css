@@ -91,7 +91,7 @@ body{
     visibility: collapse;
     background-color: #ffffff;
     position: absolute;
-    top: 10%;
+    top: 7%;
     left: 5%;
     width: 90%;
     border-radius: 2rem;
@@ -326,6 +326,9 @@ span{
     stroke-dasharray: var(--circle);
     stroke-dashoffset: var(--circle);
     }
+    #menu{
+        margin-top: 15%;
+    }
     #changes{
         flex-direction: row;
         justify-content: space-between;
@@ -365,13 +368,17 @@ span{
     }
 }
 @media(min-width:900px){
+    #options{
+        width: 30rem;
+    }
     .holder{
         padding-top: 5rem;
         padding-left: 7.5rem;
     }
     #menu{
-        width: 70%;
-        margin-left: 10%;
+        width: 45rem;
+        margin-left: 12%;
+        margin-top: 4%;
     }
     #timesettings{
         width: 95%;
@@ -411,9 +418,16 @@ span{
     }
 }
 
-@media(min-width:2500px){
-    .holder{
-        padding-top: 3%;
-        padding-left: 5%;
+@media(min-width:1400px){
+    #menu{
+        width: 45rem;
+        margin-left: 20%;
+        margin-top: 4%;
+    }
+}
+@media(min-width:2000px){
+    #menu{
+        margin-top: 2%;
+        margin-left: 31.5%;
     }
 }
