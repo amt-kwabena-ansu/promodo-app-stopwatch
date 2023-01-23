@@ -113,15 +113,8 @@ function displayTimer(){
                 minutes--;
             }
         }
-        if(minCounter>60){
-            if(minCounter%60==1){
-                let circle=$(":root").css("--circle");
-                circleCounter=loopCalc;
-                dd.style.strokeDashoffset=((circle*loopCalc)/setMin);// to decrease the ofset
-            }
-        }
         let circle=$(":root").css("--circle");
-        dd.style.strokeDashoffset=((circle*circleCounter)/setMin);
+        dd.style.strokeDashoffset=((circle*loopCalc)/setMin);
     }
 }
 function setT(){
