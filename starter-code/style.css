@@ -427,7 +427,7 @@ span{
 }
 @media(min-width:1400px){
     #menu{
-        margin-top: 2%;
+        margin-top: 5%;
         margin-left: 15%;
     }
 }
@@ -435,6 +435,11 @@ span{
 @media(min-width:1900px){
     #menu{
         margin-top: 7%;
-        margin-left: 20%;
+        margin-left: 19%;
+    }
+}
+@media(min-width:2200px){
+    #menu{
+        margin-left: 23.5%;
     }
 }
