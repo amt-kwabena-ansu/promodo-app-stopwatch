@@ -1,14 +1,15 @@
 :root{
     --theme:#F87070;
     --font: 'Kumbh Sans', sans-serif;
-    --circle:723.82;
+    --circle:738.9;
 }
 body{
     background-color: #1E213F;
     font-family: var(--font);
 }
 #logo{
-    margin: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
 }
 #main{
     display: flex;
@@ -19,8 +20,9 @@ body{
 #pomo{
     background-color: var(--theme);
     border-radius: 100px;
-    height: inherit;
+    height: 85%;
     width: 34%;
+    margin-left: 5px;
     border: none;
     color: #1E213F;
     font-family: var(--font);
@@ -37,7 +39,7 @@ body{
 #options{
     background-color: #161932;
     border-radius: 100px;
-    height: 3rem;
+    height: 3.5rem;
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -53,7 +55,7 @@ body{
     justify-content: center;
     align-items: center;
     margin-bottom: 5rem;
-    box-shadow: -35px -30px 50px  #272C5A;
+    box-shadow: -35px -30px 50px  #272C5A,35px 30px 50px #121530;
 }
 .holder{
     display: flex;
@@ -62,8 +64,8 @@ body{
     position: absolute;
     width: 10rem;
     height: 10rem;
-    top: 21rem;
-    padding-left: 10.5%;
+    top: 20rem;
+    left: 30%;
 }
 #time{
     color: #D7E0FF;
@@ -71,6 +73,7 @@ body{
 }
 #contText{
     text-align: center;
+    letter-spacing: 13px;
 }
 #controller{
     width: 12rem;
@@ -82,8 +85,8 @@ body{
 /* #inner, */ .circle{
     background-color: #161932;
     border-radius: 50%;
-    height: 80%;
-    width: 80%;
+    height: 88%;
+    width: 88%;
     display: flex;
 }
 
@@ -94,7 +97,7 @@ body{
     top: 7%;
     left: 5%;
     width: 90%;
-    border-radius: 2rem;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
 
@@ -107,10 +110,10 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;  
-    width: 90%;  
-}
-#close{
-    margin-left: 5rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 hr{
     height: 2px;
@@ -126,6 +129,8 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 #timesettings>h3{
     align-self: center;
@@ -139,6 +144,10 @@ hr{
     height: 2.5rem;
     border-radius: .5rem;
     color: #161932;
+}
+.input_val{
+    font-size: 14px;
+    font-weight: 700;
 }
 #input>div{
     padding-left: 1rem;
@@ -166,11 +175,14 @@ hr{
 .last{
     display: flex;
     flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 #font,#color{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-bottom: 1.5rem;
 }
 #font>h3,#color>h3{
@@ -181,52 +193,58 @@ hr{
     gap: 1rem;
     margin-bottom: 5%;
 }
+#font>div>button,#color>div>button{
+    height: 2.5rem;
+    width: 2.5rem;
+}
 #font>div>button{
-    height: 3rem;
-    width: 3rem;
     border-radius: 50%;
     border: none;
     background-color: #EFF1FA;
 }
 #apply{
-    height: 3rem;
-    width: 10rem;
+    height: 3.2rem;
+    width: 9rem;
     border: none;
     border-radius: 100px;
     align-self: center;
     margin-bottom: -1.5rem;
     background-color: var(--theme);
     color: #fff;
-    font-weight: bold;
-    font-size: 15px;
+    font-weight: 700;
+    font-size: 17px;
 }
 h1{
-    font-size: 70px;
+    font-size: 74px;
     font-weight: bold;
     font-family: var(--font);
 }
 h2{
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 700;
     font-family: var(--font);
 }
 h3{
-    font-size: 16px;
-    font-weight: bold;
-    letter-spacing: 1rem;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 4.2;
     font-family: var(--font);
 }
 h4{
     font-size: 13px;
     letter-spacing: 12px;
 }
+.input_val{
+    font-size: 14px;
+    font-weight: 700;
+}
 #p1{
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
 }
 #p2{
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 700;
     color: #1E213F;
     opacity: 50%;
 }
@@ -241,14 +259,17 @@ h4{
     border: black solid;
 }  */
 svg{
+    margin-left: 0.7rem;
+    margin-bottom: 0.2rem;
+    align-self: center;
     transform: rotate(-90deg);
-    height: 240px;
-    width: 240px;
+    height: 245px;
+    width: 245px;
 
 }
 .circle>svg>circle{
     fill: transparent;
-    stroke-width: 8;
+    stroke-width: 7;
     stroke: #161932;
     transform: translate(1.25rem,1.25rem);
 }
@@ -275,18 +296,17 @@ span{
 
 #kumbh{
     font-family: 'Kumbh Sans', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
 }
 #roboto{
     font-family: 'Roboto Slab', serif;
+    font-weight: 400;
 }
 #space{
     font-family: 'Space Mono', monospace;
-    font-weight: bold;
+    font-weight: 700;
 }
 #color>div>button{
-    height: 3rem;
-    width: 3rem;
     border-radius: 50%;
     border: none;
 }
@@ -301,24 +321,33 @@ span{
 }
 @media(min-width:768px){
     :root{
-        --circle:1206
+        --circle:1236.53
+    }
+    #pomo,#long,#short{
+        font-size: 15px;
+        font-weight: 700;
     }
     .holder{
-        padding-top: 11%;
-        padding-left: 15%;
+        top: 30rem;
+        left: 40%;
     }
     #options{
         width: 50%;
+        height: 4.5rem;
     }
     #clock{
+        margin-top: 5rem;
         height: 500px;
         width: 500px;
     }
     svg{
-        height: 400px;
-        width: 400px;
+        margin-left: 1rem;
+        margin-bottom: 0rem;
+        height: 410px;
+        width: 410px;
     }
     .circle>svg>circle{
+        stroke-width: 13;
         transform: translate(2.25rem,2.2rem);
     }
     .circle>svg>circle:nth-child(2){
@@ -327,31 +356,63 @@ span{
     stroke-dashoffset: var(--circle);
     }
     #menu{
-        margin-top: 15%;
+        margin-top: 18%;
+        margin-left: 10%;
+        width: 70%;
+        max-width: 600px;
     }
     #changes{
         flex-direction: row;
         justify-content: space-between;
-        width: 95%;
     }
     #changes>div{
         flex-direction: column;
     }
+    #input{
+        height: 3rem;
+        width: 8rem;
+    }
+    .input_val{
+        font-size: 16px;
+    }
+    .imgs{
+        margin-top: .3rem;
+    }
     #font,#color{
         flex-direction: row;
         justify-content: space-between;
+        margin-top: 1rem;
     }
-    .last{
-        width: 90%;
+    #font>h3,#color>h3{
+        align-self: flex-start;
+    }
+    #font>div>button,#color>div>button{
+        height: 3rem;
+        width: 3rem;
+    }
+    #settings,#timesettings,.last{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    #timesettings>h3{
+        align-self: flex-start;
+    }
+    #timesettings{
+        margin-bottom: 1rem;
+    }
+    #apply{
+        height: 3.5rem;
+        margin-bottom: -1.25;
     }
     h1{
-        font-size: 110px;
+        font-size: 120px;
     }
     h2{
         font-size: 32px;
     }
     h3{
         font-size: 18px;
+        letter-spacing: 6px;
     }
     h4{
         font-size: 15px;
@@ -372,23 +433,17 @@ span{
         width: 30rem;
     }
     .holder{
-        padding-top: 5rem;
-        padding-left: 7.5rem;
+        left: 42%;
     }
     #menu{
-        width: 45rem;
-        margin-left: 12%;
-        margin-top: 4%;
-    }
-    #timesettings{
-        width: 95%;
-    }
-    #changes{
-        flex-direction: row;
-        justify-content: space-between;
+        max-width: 45rem;
+        top: 0%;
     }
     #changes>div{
         flex-direction: column;
+    }
+    .circle>svg>circle{
+        stroke-width: 15;
     }
     h1{
         font-size: 120px;
@@ -422,20 +477,25 @@ span{
     #menu{
         width: 45rem;
         left: 12%;
-        top: 4%;
+        top: -9%;
+    }
+    .holder{
+        left: 43.5%;
     }
 }
 @media(min-width:1400px){
     #menu{
-        margin-top: 5%;
-        margin-left: 15%;
+        left: 15%;
     }
 }
 
 @media(min-width:1900px){
+    .holder{
+        left: 46%;
+    }
     #menu{
-        margin-top: 7%;
-        margin-left: 19%;
+        top: -19%;
+        left: 21%;
     }
 }
 @media(min-width:2200px){

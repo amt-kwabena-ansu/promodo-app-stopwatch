@@ -238,11 +238,13 @@ $("#controller").click(()=>{
 });
 $("#new").click(()=>{
     $("#menu").css("visibility","visible");
-    $("#main").css("opacity","40%");
+    $("#main").css("opacity","50%");
+    $("body").css("background-color","rgba(10, 12, 28, 0.95)");
 });
 $("#close").click(()=>{
     //make main part deep
     $("#main").css("opacity","100%");
+    $("body").css("background-color","#1E213F");
     //if changes were made but not saved
     font(data.set.oldFont);
     theme(data.set.oldTheme);
