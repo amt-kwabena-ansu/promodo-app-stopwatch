@@ -347,7 +347,6 @@ span{
         width: 410px;
     }
     .circle>svg>circle{
-        stroke-width: 13;
         transform: translate(2.25rem,2.2rem);
     }
     .circle>svg>circle:nth-child(2){
@@ -453,6 +452,7 @@ span{
     }
     h3{
         font-size: 19px;
+        letter-spacing: 15px;
     }
     h4{
         font-size: 16px;
