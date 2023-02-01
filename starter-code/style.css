@@ -270,6 +270,7 @@ svg{
 .circle>svg>circle{
     fill: transparent;
     stroke-width: 7;
+    stroke-linecap: round;
     stroke: #161932;
     transform: translate(1.25rem,1.25rem);
 }
