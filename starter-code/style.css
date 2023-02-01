@@ -115,6 +115,7 @@ body{
     padding-left: 1rem;
     padding-right: 1rem;
 }
+#close{opacity: .5;}
 hr{
     height: 2px;
     width: 99%;
@@ -157,6 +158,9 @@ hr{
     display: flex;
     flex-direction: column;
     gap: 1rem; 
+}
+.up,.down{
+    opacity: .25;
 }
 #changes{
     display: flex;
@@ -444,6 +448,31 @@ span{
     }
     .circle>svg>circle{
         stroke-width: 15;
+    }
+    #long:hover,#short:hover{
+        color: #ffffff;
+    }
+    #new:hover{
+        filter: brightness(1000%);
+    }
+    #apply:hover{
+        filter: brightness(140%);
+    }
+    .up:hover{
+        opacity: 1;
+    }
+    .down:hover{
+        opacity: 1;
+    }
+    #close:hover{
+        opacity: 1;
+    }
+    #font>div>button:hover,#color>div>button:hover{
+        border: white solid;
+        box-shadow:0 0 0 2px #EFF1FA ;
+    }
+    #contText:hover{
+        color: var(--theme);
     }
     h1{
         font-size: 120px;
