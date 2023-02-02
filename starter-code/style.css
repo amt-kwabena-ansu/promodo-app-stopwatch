@@ -352,6 +352,7 @@ span{
         width: 410px;
     }
     .circle>svg>circle{
+        stroke-width: 12;
         transform: translate(2.25rem,2.2rem);
     }
     .circle>svg>circle:nth-child(2){
@@ -385,12 +386,13 @@ span{
     #font,#color{
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 1rem;
+        margin-top: 1.2rem;
     }
     #font>h3,#color>h3{
         align-self: flex-start;
     }
     #font>div>button,#color>div>button{
+        margin-top: 0.5rem;
         height: 3rem;
         width: 3rem;
     }
