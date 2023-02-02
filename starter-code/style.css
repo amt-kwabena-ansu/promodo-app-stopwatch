@@ -123,9 +123,6 @@ hr{
     border: none;
     margin-top: -1rem;
 }
-#timesettings>h3{
-   letter-spacing: 4.23px; 
-}
 #timesettings{
     display: flex;
     flex-direction: column;
@@ -189,9 +186,6 @@ hr{
     justify-content: center;
     margin-bottom: 1.5rem;
 }
-#font>h3,#color>h3{
-    letter-spacing: 1px;
-}
 #font>div,#color>div{
     display: flex;
     gap: 1rem;
@@ -220,7 +214,7 @@ hr{
 }
 h1{
     font-size: 74px;
-    font-weight: bold;
+    font-weight: 700;
     font-family: var(--font);
 }
 h2{
@@ -231,12 +225,12 @@ h2{
 h3{
     font-size: 15px;
     font-weight: 700;
-    letter-spacing: 4.2;
+    letter-spacing: 7px;
     font-family: var(--font);
 }
 h4{
     font-size: 13px;
-    letter-spacing: 12px;
+    letter-spacing: 5px;
 }
 .input_val{
     font-size: 14px;
@@ -245,9 +239,11 @@ h4{
 #p1{
     font-size: 14px;
     font-weight: 700;
+    line-height: 18px;
 }
 #p2{
     font-size: 12px;
+    line-height: 14px;
     font-weight: 700;
     color: #1E213F;
     opacity: 50%;
@@ -388,7 +384,7 @@ span{
         justify-content: space-between;
         margin-top: 1.2rem;
     }
-    #font>h3,#color>h3{
+    #font>h4,#color>h4{
         align-self: flex-start;
     }
     #font>div>button,#color>div>button{
@@ -418,20 +414,15 @@ span{
     }
     h3{
         font-size: 18px;
-        letter-spacing: 6px;
     }
     h4{
         font-size: 15px;
-        letter-spacing: 15px;
     }
     #p1{
         font-size: 16px;
     }
     #p2{
         font-size: 13px;
-        font-weight: bold;
-        color: #1E213F;
-        opacity: 50%;
     }
 }
 @media(min-width:900px){
@@ -492,20 +483,15 @@ span{
     }
     h3{
         font-size: 19px;
-        letter-spacing: 15px;
     }
     h4{
         font-size: 16px;
-        letter-spacing: 17px;
     }
     #p1{
         font-size: 17px;
     }
     #p2{
         font-size: 14px;
-        font-weight: bold;
-        color: #1E213F;
-        opacity: 50%;
     }
     #font,#color{
         flex-direction: row;
