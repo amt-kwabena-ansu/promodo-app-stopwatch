@@ -450,28 +450,36 @@ span{
         stroke-width: 15;
     }
     #long:hover,#short:hover{
+        cursor: pointer; 
         color: #ffffff;
     }
     #new:hover{
+        cursor: pointer; 
         filter: brightness(1000%);
     }
     #apply:hover{
+        cursor: pointer; 
         filter: brightness(140%);
     }
     .up:hover{
+        cursor: pointer; 
         opacity: 1;
     }
     .down:hover{
+        cursor: pointer; 
         opacity: 1;
     }
     #close:hover{
+        cursor: pointer; 
         opacity: 1;
     }
     #font>div>button:hover,#color>div>button:hover{
+        cursor: pointer; 
         border: white solid;
         box-shadow:0 0 0 2px #EFF1FA ;
     }
     #contText:hover{
+        cursor: pointer; 
         color: var(--theme);
     }
     h1{
