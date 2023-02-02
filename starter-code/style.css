@@ -447,7 +447,7 @@ span{
         flex-direction: column;
     }
     .circle>svg>circle{
-        stroke-width: 15;
+        stroke-width: 12;
     }
     #long:hover,#short:hover{
         cursor: pointer; 
